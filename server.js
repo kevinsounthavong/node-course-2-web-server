@@ -78,6 +78,11 @@ app.get('/bad', (req, res) => {
     });
 });
 
+// adding projects page
+app.get('/projects', (req, res) => {
+    res.render('projects.hbs');
+})
+
 // Bind the app to a port on your machine
 // Need to make the port dynamic using an ENVIRONMENT variable Heroku sets
 app.listen(port, () => {
